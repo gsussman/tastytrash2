@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<body xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+    <nav class="navbar navbar-dark bg-dark site-header sticky-top py-1">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" style="color: #999;" href="https://getbootstrap.com/docs/4.0/examples/product/#">
+          TastyTrash
+        </a>
+        <a class="py-2 d-none d-md-inline-block" style="color: #999;" href="https://getbootstrap.com/docs/4.0/examples/product/#">Why TastyTrash</a>
+        <a class="py-2 d-none d-md-inline-block" style="color: #999;" href="https://getbootstrap.com/docs/4.0/examples/product/#">Our Process</a>
+        <a class="py-2 d-none d-md-inline-block" style="color: #999;" href="https://getbootstrap.com/docs/4.0/examples/product/#">Pricing</a>
+        <a class="py-2 d-none d-md-inline-block" style="color: #999;" href="https://getbootstrap.com/docs/4.0/examples/product/#">Sign Up</a>
+      </div>
+    </nav>
+
+
+    <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script>
+  AOS.init();
+    </script>
+
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+{% endblock %}
